@@ -20,19 +20,21 @@
     </p>
     <div class="relative w-64 h-2 mx-auto bg-gray-700 rounded-full overflow-hidden">
       <div class="absolute top-0 left-0 h-full bg-[#00bfff] animate-ping-slow rounded-full" style="width: 50%"></div>
-    </div>
-    <p class="text-xs text-gray-500 mt-4">Stay tuned for updates!</p>
 
-    <div class="pe_signin_button" data-client-id="16249869787321772190"><script src="https://www.phone.email/sign_in_button_v1.js" async></script></div>
+      <div class="pe_verify_email" data-client-id="16249869787321772190"><script src="https://www.phone.email/verify_email_v1.js" async></script></div> 
 <script>
-    function phoneEmailListener(userObj){
+    function phoneEmailReceiver(userObj){
         var user_json_url = userObj.user_json_url;
         
         // You can submit your form here or redirect user to post login dashboard page
-        // Send user_json_url to your backend to retrieve user info (i.e. country code and phone number) from this URL.
-        alert('Phone Verification Successfull !!\nPlease fetch authenticated country code and phone number from following JSON file URL.\n '+user_json_url+'');
+        // Send user_json_url to your backend to retrieve user info (i.e. email id) from this URL.
+        alert('Email Verification Successfull !!\nPlease fetch authenticated email id from following JSON file URL.\n '+user_json_url+'');
     }
-</script> 
+</script>
+
+
+    </div>
+    <p class="text-xs text-gray-500 mt-4">Stay tuned for updates!</p>
   </div>
 
 
